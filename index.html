@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brain Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BRAIN GAME</h1>
+
+    <!-- This is the Puzzle area -->
+    <div id="puzzle-display" aria-live="polite">Loading puzzle...</div>
+    <button id="newPuzzleBtn">Get New Puzzle</button>
+    <button id="hintBtn">Show Hint</button>
+
+    <!-- This shows the answer input -->
+    <div class="answer-row">
+      <input id="userAnswer" type="text" placeholder="Type your answer here" />
+      <button id="submitAnswerBtn">Submit Answer</button>
+    </div>
+    <p id="feedback" aria-live="polite"></p>
+
+    <!-- The score and recent attempts will appear here -->
+    <div id="scoreDisplay">Score: 0</div>
+    <div id="recentPanel">
+      <h3>Recent Attempts</h3>
+      <div id="recentList">(none yet)</div>
+      <button id="resetScoreBtn">Reset Score</button>
+    </div>
+
+    <!-- The Memory game for brain boaster -->
+    <h2>Mini Memory Game</h2>
+    <button id="startMemoryBtn">Start Memory Game</button>
+    <div id="memoryGame"></div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
